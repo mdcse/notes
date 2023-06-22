@@ -5,5 +5,7 @@ from .models import Notes
 class NotesSerializer(serializers.ModelSerializer):
     class Meta:
         model = Notes
-        fields = '__all__'
+        fields = ('email', 'title', 'text', 'audio', 'video')
+        read_only_fields = ('audio', 'video')
+
 

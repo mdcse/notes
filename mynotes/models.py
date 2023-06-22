@@ -4,7 +4,7 @@ from account.models import User
 class Notes(models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE)
     title = models.CharField(max_length=100)
-    text = models.TextField()
+    text = models.TextField(blank=True)
     video = models.FileField(upload_to='videos/', null=True, blank=True)
     audio = models.FileField(upload_to='audios/', null=True, blank=True)
     created_at = models.DateTimeField(auto_now_add=True)
