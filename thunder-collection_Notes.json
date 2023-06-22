@@ -1,0 +1,191 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "Notes",
+    "dateExported": "2023-06-22T18:01:37.764Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "2ccdd132-ab3e-42be-8914-894835773796",
+            "colId": "abe78e8c-f9dd-4225-8538-29fbf325028a",
+            "containerId": "",
+            "name": "Get Notes",
+            "url": "http://127.0.0.1:8000/api/mynotes/notes/",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2023-06-22T17:18:27.832Z",
+            "modified": "2023-06-22T17:18:27.832Z",
+            "headers": [],
+            "params": [],
+            "auth": {
+                "type": "bearer",
+                "bearer": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjg3NDU0NDM0LCJpYXQiOjE2ODc0NTQxMzQsImp0aSI6IjFmMjI2ZDA1ZmQzZTQxZGRiNzI5Y2JmZDZmMDY1OGFhIiwidXNlcl9pZCI6Mn0.hq6CxJ-g3vUZpMKZpfrcgg1GvauHnDZ6fB9ChngYzFc"
+            },
+            "tests": []
+        },
+        {
+            "_id": "54a18075-0b7a-4cac-8f8d-1b950d5f88c8",
+            "colId": "abe78e8c-f9dd-4225-8538-29fbf325028a",
+            "containerId": "",
+            "name": "Add Notes",
+            "url": "http://127.0.0.1:8000/api/mynotes/notes/",
+            "method": "POST",
+            "sortNum": 15000,
+            "created": "2023-06-22T17:25:38.843Z",
+            "modified": "2023-06-22T17:55:41.636Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"title\":\"Notes2\",\n  \"email\":\"mdcse786@gmail.com\",\n  \"text\":\"This is description of notes1\"\n}",
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjg3NDU4NTA2LCJpYXQiOjE2ODc0NTU1MDYsImp0aSI6ImIzZjIyMzE5MDc0YTRjNzY5NWE0MGFkZjY2NzY4MWI5IiwidXNlcl9pZCI6Mn0.IBFXlE_cJ6ez6Q2ZbyPRh9A9VA9-pToFjdJ3ltIbXhg"
+            },
+            "tests": []
+        },
+        {
+            "_id": "f8a1a559-9883-4b41-93e9-6a2582144973",
+            "colId": "abe78e8c-f9dd-4225-8538-29fbf325028a",
+            "containerId": "",
+            "name": "Login",
+            "url": "http://127.0.0.1:8000/api/user/login/",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2023-06-22T17:18:50.714Z",
+            "modified": "2023-06-22T17:18:50.714Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"email\":\"mdcse786@gmail.com\",\n  \"password\":\"Danish@123\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "2b89945e-b0d2-44df-baa1-74bc8d15705c",
+            "colId": "abe78e8c-f9dd-4225-8538-29fbf325028a",
+            "containerId": "",
+            "name": "Reset password",
+            "url": "http://127.0.0.1:8000/api/user/reset-password/MQ/bq636g-e7e6f3f6d49587f457c24ec2d0e67571/",
+            "method": "POST",
+            "sortNum": 30000,
+            "created": "2023-06-22T17:19:03.823Z",
+            "modified": "2023-06-22T17:19:03.823Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"password\":\"Danish@32\",\n  \"password2\":\"Danish@32\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "413964c8-af8b-4701-978e-a55efb012f73",
+            "colId": "abe78e8c-f9dd-4225-8538-29fbf325028a",
+            "containerId": "",
+            "name": "send-password-reset-email",
+            "url": "http://127.0.0.1:8000/api/user/send-password-reset-email/",
+            "method": "POST",
+            "sortNum": 40000,
+            "created": "2023-06-22T17:19:16.911Z",
+            "modified": "2023-06-22T17:19:16.911Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"email\":\"mdcse786@gmail.com\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "55eb5d96-3aae-4ab3-b8dd-c05b33c1d419",
+            "colId": "abe78e8c-f9dd-4225-8538-29fbf325028a",
+            "containerId": "",
+            "name": "change_password",
+            "url": "http://127.0.0.1:8000/api/user/change-password/",
+            "method": "PATCH",
+            "sortNum": 50000,
+            "created": "2023-06-22T17:19:29.328Z",
+            "modified": "2023-06-22T17:19:29.328Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"password\":\"Danish@121\",\n  \"password2\":\"Danish@121\"\n}",
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjg3MzU5Njg1LCJpYXQiOjE2ODczNTkzODUsImp0aSI6ImRlMDlhYzBkNDcxZDRjMDViNTgwMmFhZmVhOWZhOWQ1IiwidXNlcl9pZCI6MX0.7kvvC6n_Su6uTtzshnW0vht4i4EVa64YAc91kZIhtfo"
+            },
+            "tests": []
+        },
+        {
+            "_id": "c6e418be-0dc3-4198-a09a-84276eb2758a",
+            "colId": "abe78e8c-f9dd-4225-8538-29fbf325028a",
+            "containerId": "",
+            "name": "Dashboard",
+            "url": "http://127.0.0.1:8000/api/user/dashboard/",
+            "method": "PATCH",
+            "sortNum": 60000,
+            "created": "2023-06-22T17:19:39.911Z",
+            "modified": "2023-06-22T17:19:39.911Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"email\":\"mdcse786@gmail.com\",\n  \"password\":\"Danish@123\"\n}",
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjg3MzU4NjI1LCJpYXQiOjE2ODczNTgzMjUsImp0aSI6IjM4YmRiNDcxMzc5OTQ0ZTI4NDU5Zjg1M2QwYzQ3NGM2IiwidXNlcl9pZCI6MX0.RRm_4vSJ4f0zURor8UDyYhDwMEWD8W3cB8wJgLYDViU"
+            },
+            "tests": []
+        },
+        {
+            "_id": "cd24c335-5de9-4f7e-82e8-1438f2ba2146",
+            "colId": "abe78e8c-f9dd-4225-8538-29fbf325028a",
+            "containerId": "",
+            "name": "Registraton",
+            "url": "http://127.0.0.1:8000/api/user/register/",
+            "method": "POST",
+            "sortNum": 70000,
+            "created": "2023-06-22T17:19:51.196Z",
+            "modified": "2023-06-22T17:19:51.196Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"email\":\"apiwalebhai@gmail.com\",\n  \"password\":\"Danish@321\",\n  \"password2\":\"Danish@321\",\n  \"name\":\"Api Kumar\",\n  \"tc\":\"True\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "4ed5c3b4-bf0c-46f9-89ee-8cda2cb2d84f",
+            "colId": "abe78e8c-f9dd-4225-8538-29fbf325028a",
+            "containerId": "",
+            "name": "Registraton",
+            "url": "http://127.0.0.1:8000/api/user/register/",
+            "method": "POST",
+            "sortNum": 80000,
+            "created": "2023-06-22T17:19:59.214Z",
+            "modified": "2023-06-22T17:19:59.214Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"email\":\"apiwalebhai@gmail.com\",\n  \"password\":\"Danish@321\",\n  \"password2\":\"Danish@321\",\n  \"name\":\"Api Kumar\",\n  \"tc\":\"True\"\n}",
+                "form": []
+            },
+            "tests": []
+        }
+    ]
+}
